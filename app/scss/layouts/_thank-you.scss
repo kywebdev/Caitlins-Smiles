@@ -1,0 +1,146 @@
+.thank-you {
+	main {
+		padding-bottom: 60px;
+
+		@media screen and (max-width: $small) {
+			padding-bottom: 25px;
+		}
+	}
+	.container {
+		max-width: $large;
+	}
+	.grid-item {
+		width: calc((100% - 80px) / 3);
+		margin-bottom: 35px;
+
+		@media screen and (max-width: $large) {
+			width: calc((100% - 40px) / 2);
+		}
+		@media screen and (max-width: $medium) {
+			width: 100%;
+		}
+		@media screen and (max-width: $small) {
+			margin-bottom: 25px;
+		}
+		&:nth-of-type(odd) {
+			.thank-you-text {
+				@media screen and (max-width: $medium) {
+					background-color: $purple !important;
+				}
+				.thank-you-author {
+					@media screen and (max-width: $medium) {
+						color: #E5B4FF !important;
+					}
+				}
+			}
+		}
+		&:nth-of-type(even) {
+			.thank-you-text {
+				background-color: $orange;
+
+				@media screen and (max-width: $medium) {
+					background-color: $orange !important;
+				}
+				.thank-you-author {
+					color: $purple;
+
+					@media screen and (max-width: $medium) {
+						color: $purple !important;
+					}
+				}
+			}
+		}
+		&:nth-child(4n + 1) {
+			.thank-you-text {
+				@media screen and (max-width: $large) {
+					background-color: $purple;
+				}
+				.thank-you-author {
+					@media screen and (max-width: $large) {
+						color: #E5B4FF;
+					}
+				}
+			}
+		}
+		&:nth-child(4n + 2) {
+			.thank-you-text {
+				@media screen and (max-width: $large) {
+					background-color: $orange;
+				}
+				.thank-you-author {
+					@media screen and (max-width: $large) {
+						color: $purple;
+					}
+				}
+			}
+		}
+		&:nth-child(4n + 3) {
+			.thank-you-text {
+				@media screen and (max-width: $large) {
+					background-color: $orange;
+				}
+				.thank-you-author {
+					@media screen and (max-width: $large) {
+						color: $purple;
+					}
+				}
+			}
+		}
+		&:nth-child(4n + 4) {
+			.thank-you-text {
+				@media screen and (max-width: $large) {
+					background-color: $purple;
+				}
+				.thank-you-author {
+					@media screen and (max-width: $large) {
+						color: #E5B4FF;
+					}
+				}
+			}
+		}
+	}
+	.thank-you-notes {
+		.thank-you-container {
+			border-radius: 30px;
+		}
+		.thank-you-img {
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+		}
+		.thank-you-text {
+			background-color: $purple;
+			padding: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+
+			.thank-you-note {
+				font-size: 14px;
+				line-height: 32px;
+				color: $white;
+				
+				@media screen and (max-width: $small) {
+					font-size: 16px;
+					line-height: 34px;
+				}
+				.script-text {
+					font-family: $mansalva;
+					font-size: 25px;
+					letter-spacing: -.17px;
+				}
+			}
+			.thank-you-author {
+				font-family: $mansalva;
+				font-size: 23px;
+				letter-spacing: 2.5px;
+				color: #E5B4FF;
+				margin-bottom: 0px;
+				text-align: right;
+			}
+		}
+	}
+}

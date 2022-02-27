@@ -1,0 +1,422 @@
+.about {
+	header {
+		.navigation {
+			nav {
+				ul {
+					li {
+						&:nth-child(1) {
+							a {
+								color: #E5B4FF;
+
+								&:after {
+									display: none;
+								}
+							}
+						}
+						&:nth-child(7) {
+							a {
+								color: $white;
+
+								&:after {
+									content: '';
+									display: block;
+									width: calc(100% - 2px);
+									height: 3px;
+									background-color: $orange;
+									position: relative;
+									bottom: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.mobile-nav {
+		.navigation {
+			nav {
+				ul {
+					li {
+						&:nth-child(1) {
+							a {
+								&:after {
+									display: none;
+								}
+							}
+						}
+						&:nth-child(7) {
+							a {
+								color: $white;
+
+								&:after {
+									content: '';
+									display: block;
+									width: calc(100% - 4px);
+									height: 4px;
+									background-color: $orange;
+									position: relative;
+									bottom: -4px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.intro {
+		+ section {
+			.container {
+				@media screen and (max-width: $large) {
+					padding: 0px;
+				}
+			}
+		}
+	}
+	.caitlins-story {
+		display: flex;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $orange;
+
+		@media screen and (max-width: $large) {
+			display: block;
+			padding-bottom: 0px;
+			border-bottom: none;
+		}
+		&__text {
+			width: calc(100% - 420px);
+			
+			@media screen and (max-width: $large) {
+				width: 100%;
+				padding: 0px 30px;
+			}
+		}
+		&__img {
+			width: 360px;
+			margin-left: 60px;
+			margin-top: 90px;
+
+			@media screen and (max-width: $large) {
+				margin: 40px auto 0px;
+			}
+			@media screen and (max-width: $small) {
+				margin: 30px auto 0px;
+			}
+			@media screen and (max-width: 425px) {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.about-caitlins-smiles {
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 60px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $orange;
+
+		@media screen and (max-width: $small) {
+			padding-top: 30px;
+			padding-bottom: calc(30px - 1rem);
+		}
+		&__text {
+			width: calc(100% - 427px);
+			position: relative;
+			padding-bottom: 72px;
+
+			@media screen and (max-width: $large) {
+				width: 100%;
+				padding: 0px 30px;
+				order: 1;
+			}
+			.orange-btn {
+				position: absolute;
+				right: 0px;
+				bottom: 30px;
+
+				@media screen and (max-width: $large) {
+					display: none;
+				}
+				&:after {
+					transform: translateY(-50%) rotate(90deg);
+				}
+			}
+		}
+		&__text-expanded {
+			width: 100%;
+			padding-bottom: 10px;
+
+			@media screen and (max-width: $large) {
+				padding: 0px 30px;
+				order: 3;
+				display: block !important;
+			}
+			.text-right {
+				@media screen and (max-width: $large) {
+					display: none;
+				}
+				.orange-btn {
+					&:after {
+						transform: translateY(-50%) rotate(-90deg);
+					}
+				}
+			}
+		}
+		&__img {
+			width: 367px;
+			margin-right: 60px;
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $large) {
+				margin: calc(40px - 1rem) auto 40px;
+				order: 2;
+			}
+			@media screen and (max-width: $small) {
+				margin: calc(30px - 1rem) auto 30px;
+			}
+			@media screen and (max-width: 425px) {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.goals {
+		display: flex;
+		padding-top: 60px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $orange;
+
+		@media screen and (max-width: $large) {
+			display: block;
+			border-bottom: none;
+		}
+		@media screen and (max-width: $small) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		&__text {
+			width: calc(100% - 420px);
+
+			@media screen and (max-width: $large) {
+				width: 100%;
+				padding: 0px 30px;
+			}
+		}
+		&__img {
+			width: 360px;
+			margin-left: 60px;
+
+			@media screen and (max-width: $large) {
+				margin: 40px auto 0px;
+				order: 2;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			@media screen and (max-width: $small) {
+				margin: 30px auto 0px;
+			}
+			@media screen and (max-width: 425px) {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+				display: block;
+				margin-bottom: 30px;
+
+				@media screen and (max-width: $large) {
+					margin-bottom: 0px;
+					order: 2;
+				}
+			}
+			.text-right {
+				@media screen and (max-width: $large) {
+					order: 1;
+					margin-bottom: -21px;
+				}
+			}
+		}
+	}
+	.team {
+		padding-top: 60px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid $orange;
+
+		@media screen and (max-width: $large) {
+			padding-top: 20px;
+		}
+		@media screen and (max-width: $small) {
+			padding-top: 0px;
+		}
+		h2 {
+			font-weight: 600;
+			text-align: center;
+
+			@media screen and (max-width: $large) {
+				padding: 0px 30px;
+			}
+		}
+		p {
+			text-align: center;
+
+			@media screen and (max-width: $large) {
+				padding: 0px 30px;
+			}
+		}
+		&-members {
+			margin-top: 30px;
+
+			@media screen and (max-width: $large) {
+				padding: 0px 15px;
+			}
+			@media screen and (max-width: $small) {
+				margin-top: 0px;
+			}
+			.row {
+				@media screen and (max-width: $large) {
+					margin-left: 0px;
+					margin-right: 0px;
+				}
+			}
+		}
+		.team-member {
+			display: flex;
+			padding-top: 50px;
+			padding-bottom: 50px;
+
+			@media screen and (max-width: $large) {
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
+			@media screen and (max-width: $small) {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			&__img {
+				width: 135px;
+				height: 135px;
+				border-radius: 50%;
+				margin-right: 30px;
+				overflow: hidden;
+
+				@media screen and (max-width: $large) {
+					width: 85px;
+					height: 85px;
+					align-self: center;
+				}
+				@media screen and (max-width: $small) {
+					margin-right: 20px;
+				}
+				img {
+					width: 100%;
+				}
+			}
+			&__info {
+				width: calc(100% - 165px);
+
+				@media screen and (max-width: $medium) {
+					width: calc(100% - 115px);
+				}
+				@media screen and (max-width: $small) {
+					width: calc(100% - 105px);
+				}
+				&__first-name {
+					display: block;
+					font-family: $mansalva;
+					font-size: 45px;
+					line-height: 45px;
+					letter-spacing: 3px;
+					text-transform: lowercase;
+					color: $purple;
+					margin-bottom: 20px;
+
+					@media screen and (max-width: $large) {
+						font-size: 40px;
+						line-height: 40px;
+						letter-spacing: 1px;
+						margin-bottom: 15px;
+					}
+					@media screen and (max-width: $small) {
+						font-size: 35px;
+						line-height: 35px;
+						margin-bottom: 13px;
+					}
+				}
+				&__last-name {
+					display: block;
+					font-size: 22px;
+					line-height: 21px;
+					letter-spacing: 1.5px;
+					text-transform: uppercase;
+					color: $purple;
+					margin-bottom: 10px;
+
+					@media screen and (max-width: $large) {
+						font-size: 18px;
+						line-height: 17px;
+						letter-spacing: 1px;
+					}
+					@media screen and (max-width: $small) {
+						margin-bottom: 7px;
+					}
+				}
+				&__company {
+					display: block;
+					font-size: 17px;
+					line-height: 23px;
+					margin-bottom: 5px;
+
+					@media screen and (max-width: $large) {
+						font-size: 14px;
+						line-height: 17px;
+					}
+					@media screen and (max-width: $small) {
+						margin-bottom: 3px;
+					}
+				}
+				&__role {
+					display: block;
+					font-family: $mansalva;
+					font-size: 34px;
+					text-transform: lowercase;
+					color: $orange;
+
+					@media screen and (max-width: $large) {
+						font-size: 33px;
+					}
+					@media screen and (max-width: $small) {
+						font-size: 28px;
+					}
+				}
+			}
+		}
+	}
+	.statement {
+		padding-top: 60px;
+
+		@media screen and (max-width: $large) {
+			padding: 40px 30px 0px;
+		}
+		@media screen and (max-width: $small) {
+			padding: 30px 30px 0px;
+		}
+		h2 {
+			font-weight: 600;
+			text-align: center;
+		}
+		ul {			
+			li {
+				margin-bottom: 15px;
+			}
+		}
+		&__addr {
+			font-weight: 500;
+			color: $purple;
+		}
+	}
+}

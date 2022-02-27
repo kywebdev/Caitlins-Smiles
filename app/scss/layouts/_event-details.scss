@@ -1,0 +1,177 @@
+.event-details {
+	.hero {
+		@media screen and (max-width: $large) {
+			margin-top: 0px;
+		}
+		img {
+			width: 100%;
+			pointer-events: none;
+		}
+		h1 {
+			padding: 100px 30px;
+			margin-bottom: 0px;
+
+			@media screen and (max-width: $medium) {
+				padding: 80px 30px;
+			}
+			@media screen and (max-width: $small) {
+				padding: 40px 30px;
+			}
+		}
+	}
+	main {
+		@media screen and (max-width: $small) {
+			padding-top: 30px;
+		}
+	}
+	.event-info {
+		background-color: $purple;
+		padding: 35px 0px;
+
+		@media screen and (max-width: $small) {
+			padding: 30px 0px;
+		}
+		.dlt {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@media screen and (max-width: $medium) {
+				display: block;
+			}
+			.date {
+				color: $white;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 24px;
+				text-align: center;
+
+				@media screen and (max-width: $large) {
+					font-size: 18px;
+					line-height: 22px;
+				}
+				@media screen and (max-width: $medium) {
+					display: block;
+				}
+				@media screen and (max-width: $small) {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			.location {
+				color: $orange;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 24px;
+				padding-left: 90px;
+				position: relative;
+				text-align: center;
+
+				@media screen and (max-width: $large) {
+					font-size: 18px;
+					line-height: 22px;
+					padding-left: 60px;
+				}
+				@media screen and (max-width: $medium) {
+					display: block;
+					padding-left: 0px;
+				}
+				@media screen and (max-width: $small) {
+					font-size: 16px;
+					line-height: 20px;
+				}
+				&:before {
+					content: '•';
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 40px;
+					transform: translateY(-50%);
+					color: $white;
+					font-size: 30px;
+					font-weight: 600;
+
+					@media screen and (max-width: $large) {
+						left: 25px;
+					}
+					@media screen and (max-width: $medium) {
+						display: none;
+					}
+				}
+			}
+			.time {
+				color: $white;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 24px;
+				padding-left: 90px;
+				text-align: center;
+				position: relative;
+
+				@media screen and (max-width: $large) {
+					font-size: 18px;
+					line-height: 22px;
+					padding-left: 60px;
+				}
+				@media screen and (max-width: $medium) {
+					display: block;
+					padding-left: 0px;
+				}
+				@media screen and (max-width: $small) {
+					font-size: 16px;
+					line-height: 20px;
+				}
+				&:before {
+					content: '•';
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 40px;
+					transform: translateY(-50%);
+					color: $white;
+					font-size: 30px;
+					font-weight: 600;
+
+					@media screen and (max-width: $large) {
+						left: 25px;
+					}
+					@media screen and (max-width: $medium) {
+						display: none;
+					}
+				}
+			}
+			span {
+				@media screen and (max-width: $medium) {
+					margin-bottom: 15px;
+				}
+				&:last-of-type {
+					@media screen and (max-width: $medium) {
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+	.event-details-text {
+		h1 {
+			margin-bottom: 50px;
+
+			@media screen and (max-width: $large) {
+				margin-bottom: 40px;
+			}
+			@media screen and (max-width: $medium) {
+				margin-bottom: 30px;
+			}
+			@media screen and (max-width: $small) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.calendar-btn {
+		margin-top: 70px;
+
+		@media screen and (max-width: $small) {
+			margin-top: 40px;
+		}
+	}
+}

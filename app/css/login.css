@@ -1,0 +1,78 @@
+body {
+	background: linear-gradient(#8446BB, #572584);
+	color: #707070;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+.login h1 a {
+	background-image: url('../img/logo.svg');
+	background-size: 150px;
+	width: 150px;
+	height: 115px;
+	pointer-events: none;
+}
+.login #backtoblog a, .login #nav a {
+	color: white;
+}
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
+	color: white;
+	text-decoration: underline;
+}
+.login #backtoblog a:focus, .login #nav a:focus {
+	color: white;
+	box-shadow: none;
+	text-decoration: underline;
+}
+.login form {
+	border: none;
+	box-shadow: 0px 2px 2px rgb(38 38 38 / 47%);
+	border-radius: 30px;
+}
+.wp-core-ui .button-primary {
+	background: #EC9C3F;
+    border-color: #EC9C3F;
+	font-weight: 500;
+	color: white !important;
+}
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+	background: #e98b1f;
+    border-color: #e98b1f;
+}
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #e98b1f;
+}
+.login label {
+	font-weight: 500;
+}
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
+	border-color: #EC9C3F;
+	box-shadow: 0 0 0 1px #EC9C3F;
+}
+.wp-core-ui .button, .wp-core-ui .button-secondary {
+	color: #62338C;
+}
+.wp-core-ui .button-secondary:hover, .wp-core-ui .button.hover, .wp-core-ui .button:hover {
+	color: #62338C;
+}
+.login .button.wp-hide-pw:focus {
+	border-color: #62338C;
+    box-shadow: 0 0 0 1px #62338C;
+}
+.wp-core-ui .button-secondary:focus, .wp-core-ui .button.focus, .wp-core-ui .button:focus {
+	color: #62338C;
+}
+input[type=checkbox]:checked::before {
+	content: url('../img/check.svg');
+}
+.login form .input, .login input[type=password], .login input[type=text] {
+	padding: 5px 7px;
+	font-size: 20px;
+}
+.login #login_error {
+    border-left-color: #ee5b5b;
+}
+.login .success {
+    border-left-color: #6dc278;
+}
+.login #login_error, .login .message, .login .success {
+	font-weight: 500;
+}

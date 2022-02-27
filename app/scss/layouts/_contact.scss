@@ -1,0 +1,275 @@
+.contact {
+	header {
+		.navigation {
+			nav {
+				ul {
+					li {
+						&:nth-child(1) {
+							a {
+								color: #E5B4FF;
+
+								&:after {
+									display: none;
+								}
+							}
+						}
+						&:nth-child(8) {
+							a {
+								color: $white;
+
+								&:after {
+									content: '';
+									display: block;
+									width: calc(100% - 2px);
+									height: 3px;
+									background-color: $orange;
+									position: relative;
+									bottom: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.mobile-nav {
+		.navigation {
+			nav {
+				ul {
+					li {
+						&:nth-child(1) {
+							a {
+								&:after {
+									display: none;
+								}
+							}
+						}
+						&:nth-child(8) {
+							a {
+								color: $white;
+
+								&:after {
+									content: '';
+									display: block;
+									width: calc(100% - 4px);
+									height: 4px;
+									background-color: $orange;
+									position: relative;
+									bottom: -4px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.contact-info {
+		@media screen and (max-width: $medium) {
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: $small) {
+			margin-bottom: 30px;
+		}
+		h2 {
+			margin: 40px 0px 20px;
+			font-weight: 600;
+
+			@media screen and (max-width: $medium) {
+				margin: 40px 0px 5px;
+			}
+		}
+		a {
+			color: $gray;
+		}
+	}
+	.office-hours {
+		background-color: $purple;
+		padding: 40px;
+		border-radius: 30px;
+		text-align: center;
+
+		@media screen and (max-width: $medium) {
+			border-radius: 0px;
+			position: relative;
+			left: -30px;
+			width: calc(100% + 60px);
+			padding: 30px;
+		}
+		h2 {
+			color: $white;
+			font-weight: 600;
+			margin-bottom: 30px;
+		}
+		.days {
+			font-size: 20px;
+			line-height: 25px;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: $orange;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.hours {
+			color: $white;
+			display: block;
+		}
+	}
+	.contact-form {
+		@media screen and (max-width: $small) {
+			margin: 40px auto 70px;
+			width: 100%;
+			border-radius: 30px;
+		}
+		.selectric {
+			max-width: 240px;
+
+			@media screen and (max-width: $small) {
+				max-width: 223px;
+			}
+		}
+	}
+	.google-map {
+		background-color: #F9F9F9;
+
+		.container {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		iframe {
+			width: 100%;
+			height: 670px;
+			margin-bottom: -10px;
+
+			@media screen and (max-width: $medium) {
+				height: 500px;
+			}
+			@media screen and (max-width: $small) {
+				height: 400px;
+			}
+		}
+	}
+	.staff {
+		padding-top: 80px;
+
+		@media screen and (max-width: $medium) {
+			padding-top: 60px;
+		}
+		@media screen and (max-width: $small) {
+			padding-top: 40px;
+		}
+		.container {
+			border-top: 1px solid $orange;
+		}
+		h2 {
+			padding-top: 50px;
+			font-weight: 600;
+			text-align: center;
+
+			@media screen and (max-width: $small) {
+				padding-top: 30px;
+			}
+		}
+		.team-members {
+			margin-bottom: -20px;
+		}
+		.team-member {
+			display: flex;
+			padding-top: 20px;
+			padding-bottom: 20px;
+
+			&__img {
+				width: 135px;
+				height: 135px;
+				border-radius: 50%;
+				margin-right: 30px;
+				overflow: hidden;
+
+				@media screen and (max-width: $large) {
+					width: 85px;
+					height: 85px;
+					align-self: center;
+				}
+				@media screen and (max-width: $small) {
+					margin-right: 20px;
+				}
+				img {
+					width: 100%;
+				}
+			}
+			&__info {
+				width: calc(100% - 165px);
+
+				@media screen and (max-width: $medium) {
+					width: calc(100% - 115px);
+				}
+				@media screen and (max-width: $small) {
+					width: calc(100% - 105px);
+				}
+				&__first-name {
+					display: block;
+					font-family: $mansalva;
+					font-size: 45px;
+					line-height: 45px;
+					letter-spacing: 3px;
+					text-transform: lowercase;
+					color: $purple;
+					margin-bottom: 20px;
+
+					@media screen and (max-width: $large) {
+						font-size: 40px;
+						line-height: 40px;
+						letter-spacing: 1px;
+						margin-bottom: 15px;
+					}
+					@media screen and (max-width: $small) {
+						font-size: 35px;
+						line-height: 35px;
+						margin-bottom: 13px;
+					}
+				}
+				&__last-name {
+					display: block;
+					font-size: 22px;
+					line-height: 21px;
+					letter-spacing: 1.5px;
+					text-transform: uppercase;
+					color: $purple;
+					margin-bottom: 10px;
+
+					@media screen and (max-width: $large) {
+						font-size: 18px;
+						line-height: 17px;
+						letter-spacing: 1px;
+					}
+					@media screen and (max-width: $small) {
+						margin-bottom: 7px;
+					}
+				}
+				&__company {
+					display: block;
+					font-size: 17px;
+					line-height: 23px;
+					margin-bottom: 5px;
+
+					@media screen and (max-width: $large) {
+						font-size: 14px;
+						line-height: 17px;
+					}
+					@media screen and (max-width: $small) {
+						margin-bottom: 3px;
+					}
+				}
+				&__role {
+					display: block;
+					font-family: $mansalva;
+					font-size: 26px;
+					line-height: 26px;
+					text-transform: lowercase;
+					color: $orange;
+				}
+			}
+		}
+	}
+}

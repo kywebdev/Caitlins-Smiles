@@ -1,0 +1,150 @@
+footer {
+	background: linear-gradient(rgba(98, 51, 140, .86), rgba(76, 18, 128, .86));
+	padding: 130px 70px;
+
+	@media screen and (max-width: $large) {
+		background: $purple;
+		padding: 70px 30px;
+	}
+	@media screen and (max-width: $small) {
+		padding: 50px 30px;
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1700px;
+		width: 100%;
+		margin: 0px auto !important;
+		padding: 0px;
+
+		@media screen and (max-width: $large) {
+			display: block;
+			max-width: none;
+		}
+	}
+    .footer-logo {
+		width: 181px;
+		text-align: center;
+
+		@media screen and (max-width: $large) {
+			margin: 0px auto 30px;
+		}
+	}
+	.footer-text {
+		width: calc(100% - 362px);
+		padding: 0px 35px;
+
+		@media screen and (max-width: $large) {
+			width: 100%;
+			padding: 0px;
+		}
+		nav {
+			ul {
+				margin: 0px 0px 20px;
+				padding: 0px;
+				display: flex;
+				justify-content: center;
+
+				@media screen and (max-width: $large) {
+					margin-bottom: 30px;
+				}
+				li {
+					list-style-type: none;
+					margin: 0px 50px;
+
+					@media screen and (max-width: $large) {
+						line-height: 1;
+						margin: 0px 10px;
+						text-align: center;
+					}
+					a {
+						font-weight: bold;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+						text-decoration: none;
+						color: $white;
+						transition: .2s ease-in-out;
+
+						@media screen and (max-width: $small) {
+							font-size: 14px;
+						}
+						&:hover {
+							color: lighten($orange, 5%);
+						}
+					}
+				}
+			}
+		}
+		.copyright {
+			font-size: 15px;
+			line-height: 24px;
+			text-align: center;
+			color: $white;
+			margin-bottom: 0px;
+
+			@media screen and (max-width: $small) {
+				font-size: 12px;
+				line-height: 21px;
+			}
+		}
+	}
+	.footer-social {
+		width: 181px;
+
+		@media screen and (max-width: $large) {
+			margin: 0px auto 30px;
+		}
+		ul {
+			padding: 0px;
+			margin: 0px;
+
+			li {
+				list-style-type: none;
+				display: inline-block;
+				margin-right: 3px;
+				vertical-align: middle;
+
+				&:last-of-type {
+					margin-right: 0px;
+				}
+				&:nth-child(2) {
+					a {
+						font-size: 16px;
+					}
+				}
+				&:nth-child(4) {
+					a {
+						font-size: 13px;
+
+						span {
+							left: 45%;
+						}
+					}
+				}
+				a {
+					display: block;
+					color: $orange;
+					width: 30px;
+					height: 30px;
+					border: 1px solid $orange;
+					border-radius: 50%;
+					font-size: 14px;
+					position: relative;
+					transition: .2s ease-in-out;
+					
+					&:hover {
+						background-color: $orange;
+						color: $white;
+					}
+					span {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+				}
+			}
+		}
+	}
+}

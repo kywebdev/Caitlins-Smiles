@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.523" height="42.841" viewBox="0 0 44.523 42.841">
+  <defs>
+    <rect id="rect-1" width="44.523" height="42.841" x="0" y="0"/>
+    <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="44.523" height="42.841" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#rect-1"/>
+    </mask>
+  </defs>
+  <g>
+    <use fill="none" xlink:href="#rect-1"/>
+    <g mask="url(#mask-2)">
+      <path fill="none" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="round" stroke-width="2" d="M35.4202647 26.72477995l2.86923931 8.16023816-22.75603597 6.93620243-7.91514295-32.2329407 31.26481464-8.16023816 4.65014648 22.44065492-8.11302152 2.85608335z"/>
+      <path fill="none" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2" d="M43.53328621 23.8686966l-5.2437822 11.0163215"/>
+      <path fill="none" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="2" d="M10.88332155 34.68101216H.98939287V1.02002976H21.7666431"/>
+    </g>
+  </g>
+</svg>

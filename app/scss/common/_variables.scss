@@ -1,0 +1,39 @@
+// ----------------------  SITE COLORS  ----------------------
+
+$purple: 		#62338C;
+$orange: 		#EC9C3F;
+$gray: 			#707070;
+$light-gray: 	#F2F2F2;
+$white:         #ffffff;
+$black:         #000000;
+
+
+// ----------------------  TYPEFACES  ----------------------
+
+// google fonts or typekit import
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:wght@400;500;600;700&display=swap');
+
+// webfonts
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('../fonts/ComicSansMS.eot');
+    src: url('../fonts/ComicSansMS.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ComicSansMS.woff2') format('woff2'),
+        url('../fonts/ComicSansMS.woff') format('woff'),
+        url('../fonts/ComicSansMS.ttf') format('truetype'),
+        url('../fonts/ComicSansMS.svg#ComicSansMS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$mansalva:   	     'Mansalva', cursive;
+$montserrat:         'Montserrat', Helvetica, Arial, sans-serif;
+
+
+// ----------------------  BREAKPOINTS  ----------------------
+
+$x-large:   1500px;
+$large:     1200px;
+$medium:    800px;
+$small:     550px;

@@ -1,0 +1,90 @@
+.gallery {
+	margin: -15px 0px;
+
+	&-album {
+		margin: 15px 0px;
+		position: relative;
+		border-radius: 30px;
+		overflow: hidden;
+		display: block;
+		width: 100%;
+
+		@media screen and (max-width: $medium) {
+			margin: 15px auto;
+			max-width: 450px;
+		}
+		&__img {
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+		&__overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($purple, .9);
+			mix-blend-mode: multiply;
+		}
+		&__text {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			padding: 35px;
+
+			@media screen and (max-width: 400px) {
+				padding: 20px;
+			}
+			span {
+				font-size: 30px;
+				color: $white;
+
+				@media screen and (max-width: $large) {
+					font-size: 28px;
+				}
+				@media screen and (max-width: $small) {
+					font-size: 25px;
+				}
+				@media screen and (max-width: 360px) {
+					font-size: 20px;
+					line-height: 16px;
+				}
+			}
+			.orange-btn {
+				position: absolute;
+				bottom: 35px;
+				right: 35px;
+
+				@media screen and (max-width: 400px) {
+					bottom: 20px;
+					right: 20px;
+				}
+			}
+		}
+	}
+}
+.album {
+	margin: 45px 0px -15px;
+
+	@media screen and (max-width: $medium) {
+		margin: 25px 0px;
+	}
+	@media screen and (max-width: $small) {
+		margin: 15px 0px;
+	}
+	.gallery-img {
+		margin: 15px 0px;
+
+		a {
+			display: block;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}

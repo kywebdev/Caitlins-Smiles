@@ -1,0 +1,353 @@
+header {
+	position: relative;
+	top: 0px;
+	left: -65px;
+	margin-top: -82px;
+	display: flex;
+	z-index: 101;
+
+	@media screen and (max-width: 1350px) {
+		left: -125px;
+	}
+	@media screen and (max-width: $large) {
+		top: 0px;
+		left: 0px;
+		margin-top: 0px;
+		height: 90px;
+		padding: 0px 30px 0px 25px;
+		background: linear-gradient(#62338C, #4B246F);
+		box-shadow: 0px 2px 4px rgba($black, .4);
+		justify-content: space-between;
+		align-items: center;
+	}
+	.circle-shadow {
+		width: 374px;
+		height: 241px;
+		border-radius: 50%;
+		box-shadow: 0px 5px 25px rgba($black, .33);
+		position: relative;
+		z-index: 1;
+
+		@media screen and (max-width: $large) {
+			display: none;
+		}
+	}
+    .circle {
+		width: 374px;
+		height: 241px;
+		border-radius: 50%;
+		background-color: $purple;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+		overflow: hidden;
+
+		@media screen and (max-width: $large) {
+			width: auto;
+			height: auto;
+			border-radius: 0px;
+			background-color: transparent;
+			position: relative;
+			top: auto;
+			left: auto;
+			overflow: visible;
+		}
+		.header-gradient {
+			position: absolute;
+			top: 82px;
+			left: 0px;
+			z-index: 1;
+			width: 100%;
+			height: 95px;
+			background: linear-gradient(rgba(132, 70, 187, .6) 30%, rgba(87, 37, 132, 0));
+
+			@media screen and (max-width: $large) {
+				display: none;
+			}
+		}
+		a {
+			position: absolute;
+			z-index: 2;
+			top: 98px;
+			left: 125px;
+
+			@media screen and (max-width: 1350px) {
+				left: 150px;
+			}
+			@media screen and (max-width: $large) {
+				position: relative;
+				top: auto;
+				left: auto;
+			}
+			img {
+				@media screen and (max-width: $large) {
+					width: 80px;
+				}
+			}
+		}
+	}
+	.mobile-nav-toggle {
+		display: none;
+		font-size: 35px;
+		color: $orange;
+
+		@media screen and (max-width: $large) {
+			display: block;
+		}
+	}
+	.navigation {
+		display: flex;
+		justify-content: space-between;
+		background-color: $purple;
+		width: 100%;
+		position: absolute;
+		top: 82px;
+		left: 65px;
+		z-index: 1;
+		padding: 30px 40px 30px calc(374px - 50px);
+		box-shadow: 0px 5px 25px rgba($black, .33);
+
+		@media screen and (max-width: $x-large) {
+			padding-left: 310px;
+		}
+		@media screen and (max-width: 1350px) {
+			left: 125px;
+			padding-left: 250px;
+			padding-right: 20px;
+		}
+		.header-gradient {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1;
+			width: 100%;
+			height: 95px;
+			background: linear-gradient(rgba(132, 70, 187, .6) 30%, rgba(87, 37, 132, 0));
+		}
+		nav {
+			position: relative;
+			z-index: 2;
+
+			ul {
+				padding: 0px;
+				margin: 0px;
+
+				li {
+					list-style-type: none;
+					display: inline-block;
+					margin-right: 25px;
+
+					@media screen and (max-width: $x-large) {
+						margin-right: 20px;
+					}
+					@media screen and (max-width: 1350px) {
+						margin-right: 15px;
+					}
+					&:last-of-type {
+						margin-right: 0px;
+					}
+					a {
+						color: #E5B4FF;
+						font-size: 14px;
+						line-height: 18px;
+						font-weight: bold;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+						text-decoration: none;
+						transition: .2s ease-in-out;
+
+						@media screen and (max-width: $x-large) {
+							font-size: 12px;
+							line-height: 16px;
+							letter-spacing: 1.5px;
+						}
+						&:hover {
+							color: $white !important;
+						}
+					}
+				}
+			}
+		}
+		.social {
+			position: relative;
+			z-index: 2;
+
+			ul {
+				padding: 0px;
+				margin: 0px;
+
+				li {
+					list-style-type: none;
+					display: inline-block;
+					margin-right: 3px;
+					vertical-align: middle;
+
+					@media screen and (max-width: 1350px) {
+						margin-right: 0px;
+					}
+					&:last-of-type {
+						margin-right: 0px;
+					}
+					&:nth-child(2) {
+						a {
+							font-size: 16px;
+						}
+					}
+					&:nth-child(4) {
+						a {
+							font-size: 13px;
+
+							span {
+								left: 45%;
+							}
+						}
+					}
+					a {
+						display: block;
+						color: $orange;
+						width: 30px;
+						height: 30px;
+						border: 1px solid $orange;
+						border-radius: 50%;
+						font-size: 14px;
+						position: relative;
+						transition: .2s ease-in-out;
+						
+						&:hover {
+							background-color: $orange;
+							color: $white;
+						}
+						span {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.mobile-nav {
+	display: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 102;
+	width: 50%;
+	padding: 100px 50px 30px 50px;
+	border-bottom-left-radius: 70px;
+	overflow: hidden;
+	background-color: rgba(46, 24, 66, .95);
+	transform: translateX(100%);
+	transition: 1s ease;
+
+	@media screen and (max-width: $large) {
+		display: block;
+		position: fixed;
+	}
+	@media screen and (max-width: 750px) {
+		width: 70%;
+	}
+	@media screen and (max-width: 450px) {
+		width: 86%;
+	}
+	&.open {
+		transform: translateX(0%);
+		position: absolute;
+	}
+	.navigation {
+		position: relative;
+		z-index: 2;
+		
+		nav {
+			ul {
+				margin: 0px;
+				padding: 0px;
+
+				li {
+					list-style-type: none;
+					margin-bottom: 20px;
+
+					a {
+						display: inline-block;
+						font-size: 15px;
+						font-weight: bold;
+						line-height: 16px;
+						letter-spacing: 4.7px;
+						text-transform: uppercase;
+						text-decoration: none;
+						color: $white;
+						transition: .2s ease-in-out;
+
+						&:hover {
+							color: lighten($orange, 15);
+						}
+					}
+				}
+			}
+		}
+		.social {
+			ul {
+				padding: 0px;
+				margin: 35px 0px 30px;
+
+				li {
+					list-style-type: none;
+					display: inline-block;
+					margin-right: 3px;
+					vertical-align: middle;
+
+					&:last-of-type {
+						margin-right: 0px;
+					}
+					&:nth-child(2) {
+						a {
+							font-size: 16px;
+						}
+					}
+					&:nth-child(4) {
+						a {
+							font-size: 13px;
+
+							span {
+								left: 45%;
+							}
+						}
+					}
+					a {
+						display: block;
+						color: $orange;
+						width: 30px;
+						height: 30px;
+						border: 1px solid $orange;
+						border-radius: 50%;
+						font-size: 14px;
+						position: relative;
+						transition: .2s ease-in-out;
+						
+						&:hover {
+							background-color: $orange;
+							color: $white;
+						}
+						span {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
+			}
+		}
+	}
+	.mobile-nav-close {
+		font-size: 35px;
+		color: $orange;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+}
